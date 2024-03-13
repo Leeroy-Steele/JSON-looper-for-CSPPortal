@@ -10,7 +10,7 @@ export default function Home() {
 
     function findDuplicate (){
       let productMappings = obj.productMappings
-      const counts = {};
+      const counts:any = {};
   
       // Loop through each element in the array
       productMappings.forEach((value) => {
@@ -33,6 +33,9 @@ export default function Home() {
     <main className="flex flex-col items-center p-24">
       <h2 className={`mb-3 text-2xl font-semibold`}>JSON Looper</h2>
       <h2 className={`mb-3 text-xl font-semibold`}>Instructions</h2>
+      <ol>
+        <li>Login to CSP portal</li>
+      </ol>
       <form className="mb-6" onSubmit={handleSubmit}>
         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
           Input JSON from billing-profile (Profile tab)
