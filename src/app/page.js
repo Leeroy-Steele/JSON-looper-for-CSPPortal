@@ -7,11 +7,11 @@ export default function Home() {
   const [result, setResult] = useState(null);
   const [showResults, setShowResults] = useState(false);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     let productMappings = obj.productMappings;
-    const counts: any = {};
+    const counts = {};
 
     // Loop through each element in the array
     productMappings.forEach((value) => {
